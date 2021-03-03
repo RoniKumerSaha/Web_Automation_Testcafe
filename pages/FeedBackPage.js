@@ -2,6 +2,7 @@ import { Selector, t } from 'testcafe'
 import BasePage from './BasePage'
 class Feedback extends BasePage {
 	constructor() {
+		super();
 		this.name = Selector('#name')
 		this.email = Selector('#email')
 		this.subject = Selector('#subject')

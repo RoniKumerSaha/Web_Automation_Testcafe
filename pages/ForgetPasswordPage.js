@@ -3,6 +3,7 @@ import BasePage from "./BasePage"
 
 class ForgotPass extends BasePage{
 	constructor() {
+		super();
 		this.forgot_password = Selector('a').withText('Forgot your password ?')
 		this.email_input = Selector('#user_email')
 		this.send_pass = Selector('input').withAttribute('value', 'Send Password')
