@@ -4,8 +4,20 @@
   "description": "This is a project for website automation testing using JavaScript and Testcafe framework",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:all:browsers": "testcafe all tests -s takeOnFails=true",
+    "test:parallel:chrome": "testcafe -c 4 chrome:headless tests -s takeOnFails=true",
+    "test:chrome": "testcafe --live chrome tests -s takeOnFails=true --disable-page-caching",
+    "test:chrome:headless": "testcafe chrome:headless tests -s takeOnFails=true",
+    "test:safari": "testcafe safari tests -s takeOnFails=true"
   },
-  "author": "Roni Saha",
-  "license": "ISC"
+  "keywords": [
+    "Testcafe"
+  ],
+  "author": "Roni",
+  "license": "ISC",
+  "dependencies": {
+    "prettier": "^2.2.0",
+    "testcafe": "^1.9.4",
+    "xpath-to-css": "^1.0.5"
+  }
 }
