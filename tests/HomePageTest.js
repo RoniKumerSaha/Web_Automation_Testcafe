@@ -5,10 +5,11 @@ const login_page = new helper.Login()
 const forgot_pass = new helper.ForgotPass()
 const home = new helper.HomePage()
 const feedback = new helper.Feedback()
+const page_URL = new helper.Base_URL.Base_URL()
 
 // prettieer-ignore
 fixture`Zero Web Security Testcases`
-	.page`http://zero.webappsecurity.com/`.beforeEach(async t => {
+	.page`${page_URL.Base_URL}`.beforeEach(async t => {
 	await t.setPageLoadTimeout(2000).setTestSpeed(1)
 })
 

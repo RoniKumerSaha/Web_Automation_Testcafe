@@ -17,6 +17,7 @@
   "author": "Roni",
   "license": "ISC",
   "dependencies": {
+    "js-yaml": "^3.13.1",
     "prettier": "^2.2.0",
     "testcafe": "^1.9.4",
     "xpath-to-css": "^1.0.5"
