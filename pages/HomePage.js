@@ -1,5 +1,7 @@
 import { Selector } from 'testcafe'
-export default class HomePage extends BagePage{
+import BasePage from "./BasePage"
+
+export default class HomePage extends BasePage{
 	constructor() {
 		this.feedback = Selector('#feedback')
 	}

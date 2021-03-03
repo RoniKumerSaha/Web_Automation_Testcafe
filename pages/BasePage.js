@@ -1,4 +1,3 @@
-import { Selector } from 'testcafe'
-class BasePage{
+export default class BasePage{
 
 }
